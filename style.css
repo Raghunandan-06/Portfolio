@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4476a7, #39d42b); 
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s; 
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.head-img img {
+    border-radius: 20px; 
+    width: 250px; 
+    height: 250px; 
+    border: 5px solid #ed890f; 
+    transition: transform 0.3s ease-in-out; /
+}
+
+.head-img img:hover {
+    transform: scale(1.1); 
+}
+
+.info {
+    text-align: left; 
+    margin-left: 20px; 
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+.contact .mail, .contact .number {
+    margin-bottom: 5px;
+}
+
+.skills, .education, .links, .hobbies {
+    background-color: rgba(218, 165, 32, 0.8); 
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.skills:hover, .education:hover, .links:hover, .hobbies:hover {
+    background-color: #e72939cc; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+.skills h1, .education h1, .links h1, .hobbies h1 {
+    color: #ffffff; 
+    font-size: 28px; 
+}
+
+.skills hr, .education hr, .links hr, .hobbies hr {
+    border: none;
+    height: 2px;
+    background-color: #ffd700; 
+    margin: 20px 0;
+}
+
+.edu, .links ul, .skills ul {
+    list-style-type: none; 
+    font-size: 20px; 
+}
+
+.links a, .skills li {
+    text-decoration: none;
+}
+
+.links ul li, .skills ul li, .hobbies ul li {
+    margin-bottom: 5px;
+    color: #330864; 
+    transition: color 0.3s;
+    font-size: 20px; 
+}
+
+.links ul li:hover, .skills ul li:hover, .hobbies ul li:hover {
+    color: #ffd700; 
+}
+
+a {
+    color: #330864; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffd700; 
+}
+
+.hobbies ul {
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies ul li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffd700; 
+    color: #000000; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hobbies ul li:hover {
+    background-color: #b8860b; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.center-align {
+    text-align: center;
+}
